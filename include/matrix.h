@@ -1,3 +1,6 @@
+#ifndef MATRIX_H_
+#define MATRIX_H_
+
 #include <algorithm>
 #include <cmath>
 #include <iostream>
@@ -49,3 +52,5 @@ class Matrix {
   void fillComplements(Matrix& ptr);
   double calculateMinor(int i, int j);
 };
+
+#endif
