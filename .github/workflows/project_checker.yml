@@ -1,4 +1,4 @@
-name: Linter check and cppcheck
+name: Linter check, cppcheck, and code coverage
 
 on:
   push:
@@ -16,9 +16,13 @@ jobs:
     - name: Install build essentials and clang-format
       run: |
         sudo apt-get update
-        sudo apt-get install -y build-essential clang-format cppcheck
+        sudo apt-get install -y build-essential clang-format cppcheck lcov libgtest-dev
 
     - name: Run lint
       run: clang-format -i --style=Google **/*.cpp **/*.h
     - name: Run cppcheck
       run: cppcheck --language=c++ **/*.cpp **/*.h
+    - name: Run build
+      run: make lib_matrix.a
+    - name: Run tests
+      run: make clean && make
