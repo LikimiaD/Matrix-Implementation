@@ -1,5 +1,8 @@
 # Matrix-Implementation
 
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
 Matrix-Implementation is a C++ library that provides a comprehensive set of operations for manipulating matrices. This library allows for basic matrix operations such as addition, subtraction, multiplication, as well as more advanced operations like transposition, calculation of the determinant, algebraic complements, and finding the inverse matrix. Developed following modern C++ standards (C++17), it adheres to Google's C++ Style Guide for clean and readable code.
 
 ## Features
